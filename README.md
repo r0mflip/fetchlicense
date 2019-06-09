@@ -1,3 +1,5 @@
+![banner image](fetchlicense.png)
+
 # `fetchlicense`
 A (1KB) utility to Fetch a license for use with GitHub
 

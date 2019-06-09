@@ -1,0 +1,17 @@
+{
+  "extends": "r0mflip",
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "max-len": [2, {
+      "code": 100,
+      "tabWidth": 2,
+      "ignoreUrls": true,
+      "ignoreComments": true
+    }]
+  }
+}

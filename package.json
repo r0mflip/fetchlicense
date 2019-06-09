@@ -1,0 +1,32 @@
+{
+  "name": "fetchlicense",
+  "version": "0.1.0",
+  "description": "Fetch a license file for use with GitHub",
+  "bin": {
+    "fetchlicense": "./bin/fetchlicense.js"
+  },
+  "engines": {
+    "node": ">=8.10"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "license",
+    "file",
+    "GitHub",
+    "fetch",
+    "open",
+    "source"
+  ],
+  "author": "r0mflip",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r0mflip/fetchlicense.git"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-r0mflip": "^0.2.2"
+  }
+}

@@ -4,25 +4,23 @@ const {get} = require('https');
 const {readFileSync} = require('fs');
 
 
-const defaultLicense = 'MIT';
-let licenseId = process.argv[2];
+const defaultId = 'MIT';
+let arg = process.argv[2];
 
 try {
-  licenseId = !licenseId
-    ? (JSON.parse(readFileSync('./package.json', 'utf-8')).license || defaultLicense)
-    : licenseId;
+  arg = !arg
+    ? (JSON.parse(readFileSync('./package.json', 'utf-8')).license || defaultId)
+    : arg;
 } catch (e) {
-  licenseId = defaultLicense;
+  arg = defaultId;
 }
 
-get(`https://api.github.com/licenses/${licenseId}`,
-  {headers: {'User-Agent': 'r0mflip/fetchlicense'},
-}, res => {
+get(`https://api.github.com/licenses/${arg}`, {headers: {'User-Agent': 'fetchlicense'}}, res => {
   let data = Buffer.from([], 'utf-8');
 
   if (res.statusMessage !== 'OK') {
-    console.log(`Error [${res.statusMessage}]: Cannot fetch license`);
-    return;
+    console.error(`Error [${res.statusMessage}]: Cannot fetch license`);
+    process.exit(1);
   }
 
   res.on('data', d => data = Buffer.concat([data, d]));
@@ -33,5 +31,5 @@ get(`https://api.github.com/licenses/${licenseId}`,
   });
 }).on('error', e => {
   console.error(`Error [${e.code}]: Failed to fetch license, check your network settings`);
-  process.exit();
+  process.exit(1);
 });

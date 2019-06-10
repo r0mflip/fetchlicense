@@ -1,21 +1,16 @@
 ![banner image](fetchlicense.png)
 
 # `fetchlicense`
-A (1KB) utility to Fetch a license for use with GitHub
-
-> Licenses fetched from https://api.github.com/licenses/
+A (1KB) utility to fetch a license for use with GitHub _(fetched from [Github API](https://api.github.com/licenses/))_
 
 ## Usage
-
 ``` sh
 $ npx fetchlicense [SPDX_LICENSE_IDENTIFIER] > LICENSE
 ```
 
-`SPDX_LICENSE_IDENTIDIER` : Any license identifier from the SPDX License List https://spdx.org/licenses/
-
-> By default license mentioned in `package.json` of current directory is fetched
+`SPDX_LICENSE_IDENTIFIER` _(optional)_ : Any license identifier from the [SPDX License List](https://spdx.org/licenses/)
+_(defaults to `license` field of `package.json` in current directory)_
 
 ## License
 [MIT](LICENSE)
-
-> License file fetched by using this utility 😁
+> Fetched by using this utility 😁

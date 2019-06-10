@@ -13,11 +13,10 @@
   ],
   "keywords": [
     "license",
-    "file",
+    "download",
     "GitHub",
     "fetch",
-    "open",
-    "source"
+    "get"
   ],
   "author": "r0mflip",
   "license": "MIT",
@@ -25,6 +24,10 @@
     "type": "git",
     "url": "https://github.com/r0mflip/fetchlicense.git"
   },
+  "bugs": {
+    "url": "https://github.com/r0mflip/fetchlicense/issues"
+  },
+  "homepage": "https://github.com/r0mflip/fetchlicense#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-r0mflip": "^0.2.2"

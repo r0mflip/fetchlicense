@@ -1,4 +1,4 @@
-![banner image](fetchlicense.png)
+![banner image](https://raw.githubusercontent.com/r0mflip/fetchlicense/master/fetchlicense.png)
 
 # `fetchlicense`
 [![npm-badge](https://badgen.net/npm/v/fetchlicense?style=flat)](https://www.npmjs.com/package/fetchlicense)

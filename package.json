@@ -1,6 +1,6 @@
 {
   "name": "fetchlicense",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fetch a license file for use with GitHub",
   "bin": {
     "fetchlicense": "./bin/fetchlicense.js"

@@ -1,6 +1,9 @@
 ![banner image](fetchlicense.png)
 
 # `fetchlicense`
+[![npm-badge](https://badgen.net/npm/v/fetchlicense?style=flat)](https://www.npmjs.com/package/fetchlicense)
+[![npm-badge](https://badgen.net/packagephobia/publish/fetchlicense?&style=flat)](https://packagephobia.now.sh/result?p=fetchlicense)
+
 A (1KB) utility to fetch a license for use with GitHub _(fetched from [Github API](https://api.github.com/licenses/))_
 
 ## Usage
